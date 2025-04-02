@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}  <!-- Добавьте эту строку -->
     <link rel="stylesheet" href="{% static 'main/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'main/style.css' %}">
     <title>{% block title %}My Site{% endblock %}</title>
@@ -15,8 +16,5 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer>
-        {% include 'main/footer.html' %}
-    </footer>
 </body>
 </html>
